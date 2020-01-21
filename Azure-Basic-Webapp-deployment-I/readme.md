@@ -112,4 +112,5 @@ Hello World
 Homepage URL - 
 https://santo-hello-world-rest-api.azurewebsites.net/hello-world
 
- az webapp log tail --name santo-hello-world-rest-api --resource-group hello-world-rest-api-rg
+- Check log streams, first enable loggin from API service
+ az webapp log tail --name santo-hello-world-rest-api[appName] --resource-group hello-world-rest-api-rg[resource-group]
