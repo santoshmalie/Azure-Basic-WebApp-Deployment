@@ -79,9 +79,9 @@ Hello World
 -Dlogging.level.org.springframework=DEBUG
 ```
 ---------------------------
-Update Maven settings.xml from User/.m2
-you can get this information from  az login commmand
-Use Powershell for all commands
+- Update Maven settings.xml from User/.m2
+- Get this information from  az login commmand
+- Use Powershell for all commands
 ------------------------------------
 ```<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -101,14 +101,15 @@ Use Powershell for all commands
 </settings>
 ```
 
-Download Azure CLI
-az --version
-USe Windows powershell 
- add entire plugin definition into maven 
- com.microsoft.azure
-azure-webapp:deploy
-azure-webapp:config
+- Download Azure CLI
+- Verify installation: az --version
+- az login
+- add entire plugin definition into pom.xml 
+   com.microsoft.azure
+- azure-webapp:config  - Config project with Azure plugin
+- azure-webapp:deploy  - Deploy application on Azure 
 
+Homepage URL - 
 https://santo-hello-world-rest-api.azurewebsites.net/hello-world
 
  az webapp log tail --name santo-hello-world-rest-api --resource-group hello-world-rest-api-rg
